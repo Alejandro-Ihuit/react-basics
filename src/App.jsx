@@ -35,7 +35,7 @@ function App() {
 	}
 
   return (
-	<>
+	<div>
 		{estaAutenticado && <p>Bienvenido, sesión iniciada.</p>}
 		{!estaAutenticado && <p>Por favor, inicia sesión para continuar.</p>}
 
@@ -82,7 +82,7 @@ function App() {
 		</form>
 
 		{ values.nombre && <p>Hola, {values.nombre}. ¡Bienvenido a {titulo}!</p>}
-	</>
+	</div>
   );
 }
 
